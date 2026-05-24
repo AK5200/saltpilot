@@ -16,15 +16,16 @@ const CTASection = () => {
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
               Get a custom AI voice agent for your business — trained on your info, connected to your calendar, answering calls 24/7.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="tel:5558675309">
-                <Button variant="hero" size="xl" className="gap-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
+              <a href="tel:5558675309" className="w-full sm:w-auto">
+                <Button variant="hero" size="xl" className="w-full gap-3">
                   <Phone className="w-5 h-5" />
-                  Call My Assistant &nbsp; (555) 867-5309
+                  <span className="sm:hidden">Call My Assistant</span>
+                  <span className="hidden sm:inline">Call My Assistant &nbsp; (555) 867-5309</span>
                 </Button>
               </a>
-              <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="xl" className="text-foreground/70 hover:text-foreground hover:bg-white/10 border border-border gap-2">
+              <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button variant="ghost" size="xl" className="w-full text-foreground/70 hover:text-foreground hover:bg-white/10 border border-border gap-2">
                   Book a Meeting
                   <ArrowRight className="w-5 h-5" />
                 </Button>

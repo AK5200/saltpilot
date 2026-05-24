@@ -52,6 +52,26 @@ const HeroSection = () => {
     window.addEventListener("mouseup", onUp);
   };
 
+  const seekToTouch = (e: React.TouchEvent<HTMLDivElement> | TouchEvent) => {
+    const bar = progressRef.current;
+    const v = videoRef.current;
+    if (!bar || !v || !duration) return;
+    const touch = "touches" in e ? e.touches[0] : (e as TouchEvent).touches[0];
+    const rect = bar.getBoundingClientRect();
+    const ratio = Math.min(Math.max((touch.clientX - rect.left) / rect.width, 0), 1);
+    v.currentTime = ratio * duration;
+    setProgress(ratio * duration);
+  };
+
+  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setDragging(true);
+    seekToTouch(e);
+    const onMove = (ev: TouchEvent) => seekToTouch(ev);
+    const onEnd = () => { setDragging(false); window.removeEventListener("touchmove", onMove); window.removeEventListener("touchend", onEnd); };
+    window.addEventListener("touchmove", onMove);
+    window.addEventListener("touchend", onEnd);
+  };
+
   const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
   const pct = duration ? (progress / duration) * 100 : 0;
 
@@ -119,6 +139,7 @@ const HeroSection = () => {
               ref={progressRef}
               className="relative h-1.5 rounded-full bg-white/20 cursor-pointer group"
               onMouseDown={onMouseDown}
+              onTouchStart={onTouchStart}
             >
               <div
                 className="absolute left-0 top-0 h-full rounded-full bg-white transition-all duration-100"
@@ -150,7 +171,8 @@ const HeroSection = () => {
               className="w-full sm:w-auto bg-white text-black hover:bg-white/90 shadow-[0_0_40px_rgba(255,255,255,0.15)] font-semibold gap-3 text-base"
             >
               <Phone className="w-5 h-5" />
-              Call My Assistant &nbsp; (555) 867-5309
+              <span className="sm:hidden">Call My Assistant</span>
+              <span className="hidden sm:inline">Call My Assistant &nbsp; (555) 867-5309</span>
             </Button>
           </a>
           <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
