@@ -1,25 +1,35 @@
-import { Stethoscope, Wrench, ShoppingBag, Building2 } from "lucide-react";
+import { Stethoscope, Wrench, ShoppingBag, Building2, Home, ArrowRight } from "lucide-react";
 
 const useCases = [
   {
     icon: Stethoscope,
     title: "Clinics & Healthcare",
-    description: "Handle patient inquiries and appointment requests when your front desk is swamped.",
+    description: "Handle patient inquiries, appointment requests, and after-hours calls without adding staff.",
   },
   {
     icon: Wrench,
-    title: "Local Service Businesses",
-    description: "Plumbers, electricians, contractors—never miss a service call again.",
+    title: "Home Services",
+    description: "Plumbers, electricians, contractors — capture every job request, even on weekends.",
   },
   {
     icon: ShoppingBag,
-    title: "Retail & Customer Support",
-    description: "Answer product questions and support calls even during peak hours.",
+    title: "Retail & Restaurants",
+    description: "Answer product questions, take reservations, and handle support during your busiest hours.",
+  },
+  {
+    icon: Home,
+    title: "Real Estate",
+    description: "Never miss a lead. Your AI answers inquiries, qualifies callers, and books showings around the clock.",
   },
   {
     icon: Building2,
-    title: "Any Business That Gets Calls",
-    description: "If you can't afford missed calls, Saltpilot is built for you.",
+    title: "Any Local Business",
+    description: "If phone calls drive your revenue, Saltpilot makes sure none of them go unanswered.",
+  },
+  {
+    icon: ArrowRight,
+    title: "...And Your Business",
+    description: "Whatever you do, if calls matter to your business, we'll build an AI receptionist around how you work.",
   },
 ];
 
@@ -30,13 +40,13 @@ const UseCasesSection = () => {
         <div className="text-center mb-16">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">Use cases</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Built for Businesses That Get Calls
+            Built for Any Local Business That Gets Calls
           </h2>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((useCase, index) => (
-            <div 
+            <div
               key={index}
               className="group p-6 rounded-2xl glass hover:shadow-lg transition-all duration-300"
             >
