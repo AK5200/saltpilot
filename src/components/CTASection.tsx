@@ -25,7 +25,7 @@ const CTASection = () => {
                 </Button>
               </a>
               <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button variant="ghost" size="xl" className="w-full text-foreground/70 hover:text-foreground hover:bg-white/10 border border-border gap-2">
+                <Button size="xl" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md gap-2 transition-all duration-200">
                   Book a Meeting
                   <ArrowRight className="w-5 h-5" />
                 </Button>

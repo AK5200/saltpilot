@@ -35,7 +35,7 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="hidden md:block">
-            <Button variant="hero" size="default">Book a Meeting</Button>
+            <Button size="default" className="bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md transition-all duration-200">Book a Meeting</Button>
           </a>
 
           {/* Mobile: hamburger */}
@@ -69,7 +69,7 @@ const Header = () => {
             className="mt-2"
             onClick={() => setOpen(false)}
           >
-            <Button variant="hero" size="default" className="w-full">Book a Meeting</Button>
+            <Button size="default" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md transition-all duration-200">Book a Meeting</Button>
           </a>
         </div>
       )}

@@ -93,7 +93,7 @@ const PricingSection = () => {
               Ready to stop missing calls?
             </p>
             <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full gap-2 bg-white text-black hover:bg-white/90">
+              <Button size="lg" className="w-full gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md transition-all duration-200">
                 Book a Meeting
                 <ArrowRight className="w-4 h-4" />
               </Button>

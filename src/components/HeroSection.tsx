@@ -177,9 +177,8 @@ const HeroSection = () => {
           </a>
           <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button
-              variant="ghost"
               size="xl"
-              className="w-full sm:w-auto text-white/70 hover:text-white hover:bg-white/10 border border-white/10 gap-2 text-base"
+              className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md gap-2 text-base transition-all duration-200"
             >
               Book a Meeting
               <ArrowRight className="w-5 h-5" />
