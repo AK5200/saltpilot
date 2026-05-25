@@ -162,7 +162,7 @@ const HeroSection = () => {
 
         {/* CTAs */}
         <div
-          className="flex flex-col sm:flex-row items-center sm:items-end gap-4 animate-fade-up"
+          className="flex flex-col sm:flex-row items-center sm:items-end gap-4 mt-6 animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
           <div className="flex flex-col items-center sm:items-start gap-1.5 w-full sm:w-auto">
