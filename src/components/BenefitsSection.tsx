@@ -9,7 +9,7 @@ const problems = [
   {
     icon: Clock,
     title: "Calls come after business hours",
-    description: "Customers don't wait until 9am. They call when they need you — evenings, weekends, holidays.",
+    description: "Customers don't wait until 9am. They call when they need you: evenings, weekends, holidays.",
   },
   {
     icon: UserX,
@@ -48,7 +48,7 @@ const BenefitsSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-xl text-foreground font-medium">
-            Your AI receptionist answers every call — so you never lose another customer to a missed ring.
+            Your AI receptionist answers every call so you never lose another customer to a missed ring.
           </p>
         </div>
       </div>

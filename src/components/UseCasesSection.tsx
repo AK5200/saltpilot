@@ -9,7 +9,7 @@ const useCases = [
   {
     icon: Wrench,
     title: "Home Services",
-    description: "Plumbers, electricians, contractors — capture every job request, even on weekends.",
+    description: "Plumbers, electricians, contractors: capture every job request, even on weekends.",
   },
   {
     icon: ShoppingBag,

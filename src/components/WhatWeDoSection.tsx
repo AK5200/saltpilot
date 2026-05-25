@@ -1,4 +1,4 @@
-import { Phone, Clock, CalendarCheck } from "lucide-react";
+import { Phone, Clock, CalendarCheck, Brain } from "lucide-react";
 
 const features = [
   {
@@ -14,7 +14,7 @@ const features = [
   {
     icon: CalendarCheck,
     title: "Books appointments",
-    description: "Your AI schedules directly into your calendar — no back and forth, no missed bookings.",
+    description: "Your AI schedules directly into your calendar. No back and forth, no missed bookings.",
   },
 ];
 
@@ -28,8 +28,21 @@ const WhatWeDoSection = () => {
             Your 24/7 AI Receptionist
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-            We build and run a custom AI voice agent for your business — trained on your info, connected to your calendar, and always ready to answer.
+            We build and run a custom AI voice agent for your business, trained on your info, connected to your calendar, and always ready to answer.
           </p>
+        </div>
+
+        {/* Featured card */}
+        <div className="group mb-6 p-7 rounded-2xl glass border border-primary/20 hover:shadow-lg transition-all duration-300 flex flex-col sm:flex-row items-start gap-6">
+          <div className="flex-shrink-0 w-12 h-12 rounded-xl gradient-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Brain className="w-6 h-6 text-primary-foreground" />
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground mb-2">Built around your business, not a template</h3>
+            <p className="text-sm text-muted-foreground max-w-2xl">
+              This is not a generic AI that reads from a script. Before your agent answers a single call, we train it on your services, pricing, FAQs, policies, and the way you talk to customers. When callers ask real questions, they get real answers: the kind only someone who truly knows your business could give.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -14,7 +14,7 @@ const CTASection = () => {
               Stop Losing Customers to Missed Calls
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-              Get a custom AI voice agent for your business — trained on your info, connected to your calendar, answering calls 24/7.
+              Get a custom AI voice agent for your business, trained on your info, connected to your calendar, and answering calls 24/7.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
               <a href="tel:5558675309" className="w-full sm:w-auto">

@@ -2,7 +2,7 @@ const steps = [
   {
     number: "01",
     title: "A call comes in",
-    description: "Busy, after hours, or just overwhelmed — Saltpilot picks up automatically, every time.",
+    description: "Busy, after hours, or just overwhelmed? Saltpilot picks up automatically, every time.",
   },
   {
     number: "02",

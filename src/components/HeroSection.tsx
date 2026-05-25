@@ -102,7 +102,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-white/50 max-w-2xl text-balance animate-fade-up"
           style={{ animationDelay: "0.15s" }}
         >
-          Your AI receptionist picks up when you can't — 24/7, human-sounding, trained on your business, ready from day one.
+          Your AI receptionist picks up when you can't: 24/7, human-sounding, trained on your business, ready from day one.
         </p>
 
         {/* Video */}
@@ -186,6 +186,16 @@ const HeroSection = () => {
             </Button>
           </a>
         </div>
+
+        <p className="text-sm text-white/40 animate-fade-up" style={{ animationDelay: "0.35s" }}>
+          Questions?{" "}
+          <a
+            href="mailto:anupam@saltpilot.com"
+            className="text-white/60 hover:text-white underline underline-offset-2 transition-colors"
+          >
+            Hit me up at anupam@saltpilot.com
+          </a>
+        </p>
 
       </div>
     </section>
