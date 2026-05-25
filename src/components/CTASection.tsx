@@ -17,11 +17,11 @@ const CTASection = () => {
               Get a custom AI voice agent for your business, trained on your info, connected to your calendar, and answering calls 24/7.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
-              <a href="tel:5558675309" className="w-full sm:w-auto">
+              <a href="tel:+13613096198" className="w-full sm:w-auto">
                 <Button variant="hero" size="xl" className="w-full gap-3">
                   <Phone className="w-5 h-5" />
                   <span className="sm:hidden">Call My Assistant</span>
-                  <span className="hidden sm:inline">Call My Assistant &nbsp; (555) 867-5309</span>
+                  <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
                 </Button>
               </a>
               <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">

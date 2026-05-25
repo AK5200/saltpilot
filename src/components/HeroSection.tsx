@@ -165,14 +165,14 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center gap-4 animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <a href="tel:5558675309" className="w-full sm:w-auto">
+          <a href="tel:+13613096198" className="w-full sm:w-auto">
             <Button
               size="xl"
               className="w-full sm:w-auto bg-white text-black hover:bg-white/90 shadow-[0_0_40px_rgba(255,255,255,0.15)] font-semibold gap-3 text-base"
             >
               <Phone className="w-5 h-5" />
               <span className="sm:hidden">Call My Assistant</span>
-              <span className="hidden sm:inline">Call My Assistant &nbsp; (555) 867-5309</span>
+              <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
             </Button>
           </a>
           <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
