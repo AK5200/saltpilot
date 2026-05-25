@@ -16,7 +16,7 @@ const CTASection = () => {
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
               Get a custom AI voice agent for your business, trained on your info, connected to your calendar, and answering calls 24/7.
             </p>
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-end justify-center gap-4">
               <div className="flex flex-col items-center sm:items-start gap-1.5 w-full sm:w-auto">
                 <p className="flex items-center gap-1.5 text-xs text-foreground/60 font-medium">
                   <Info className="w-3.5 h-3.5 shrink-0" />
