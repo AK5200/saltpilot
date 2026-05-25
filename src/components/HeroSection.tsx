@@ -161,6 +161,9 @@ const HeroSection = () => {
         </div>
 
         {/* CTAs */}
+        <p className="text-xs text-white/40 animate-fade-up" style={{ animationDelay: "0.28s" }}>
+          Call is limited to 7 min — missed something? Just call again.
+        </p>
         <div
           className="flex flex-col sm:flex-row items-center gap-4 animate-fade-up"
           style={{ animationDelay: "0.3s" }}

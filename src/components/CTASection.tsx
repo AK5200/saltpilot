@@ -16,6 +16,9 @@ const CTASection = () => {
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
               Get a custom AI voice agent for your business, trained on your info, connected to your calendar, and answering calls 24/7.
             </p>
+            <p className="text-xs text-muted-foreground mb-2">
+              Call is limited to 7 min — missed something? Just call again.
+            </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
               <a href="tel:+13613096198" className="w-full sm:w-auto">
                 <Button variant="hero" size="xl" className="w-full gap-3">
