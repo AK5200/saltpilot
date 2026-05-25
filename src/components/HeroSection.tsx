@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Play, Pause } from "lucide-react";
+import { ArrowRight, Phone, Play, Pause, Info } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import heroVideo from "@/assets/landing page vid 1.mp4";
 
@@ -161,23 +161,26 @@ const HeroSection = () => {
         </div>
 
         {/* CTAs */}
-        <p className="text-xs text-white/40 animate-fade-up" style={{ animationDelay: "0.28s" }}>
-          Call is limited to 7 min — missed something? Just call again.
-        </p>
         <div
           className="flex flex-col sm:flex-row items-center gap-4 animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <a href="tel:+13613096198" className="w-full sm:w-auto">
-            <Button
-              size="xl"
-              className="w-full sm:w-auto bg-white text-black hover:bg-white/90 shadow-[0_0_40px_rgba(255,255,255,0.15)] font-semibold gap-3 text-base"
-            >
-              <Phone className="w-5 h-5" />
-              <span className="sm:hidden">Call My Assistant</span>
-              <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
-            </Button>
-          </a>
+          <div className="flex flex-col items-center sm:items-start gap-1.5 w-full sm:w-auto">
+            <p className="flex items-center gap-1.5 text-xs text-white/70 font-medium">
+              <Info className="w-3.5 h-3.5 shrink-0" />
+              Call is limited to 7 min. Missed something? Just call again.
+            </p>
+            <a href="tel:+13613096198" className="w-full sm:w-auto">
+              <Button
+                size="xl"
+                className="w-full sm:w-auto bg-white text-black hover:bg-white/90 shadow-[0_0_40px_rgba(255,255,255,0.15)] font-semibold gap-3 text-base"
+              >
+                <Phone className="w-5 h-5" />
+                <span className="sm:hidden">Call My Assistant</span>
+                <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
+              </Button>
+            </a>
+          </div>
           <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button
               size="xl"

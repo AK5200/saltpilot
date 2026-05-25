@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Info } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -16,17 +16,20 @@ const CTASection = () => {
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
               Get a custom AI voice agent for your business, trained on your info, connected to your calendar, and answering calls 24/7.
             </p>
-            <p className="text-xs text-muted-foreground mb-2">
-              Call is limited to 7 min — missed something? Just call again.
-            </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
-              <a href="tel:+13613096198" className="w-full sm:w-auto">
-                <Button variant="hero" size="xl" className="w-full gap-3">
-                  <Phone className="w-5 h-5" />
-                  <span className="sm:hidden">Call My Assistant</span>
-                  <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
-                </Button>
-              </a>
+              <div className="flex flex-col items-center sm:items-start gap-1.5 w-full sm:w-auto">
+                <p className="flex items-center gap-1.5 text-xs text-foreground/60 font-medium">
+                  <Info className="w-3.5 h-3.5 shrink-0" />
+                  Call is limited to 7 min. Missed something? Just call again.
+                </p>
+                <a href="tel:+13613096198" className="w-full sm:w-auto">
+                  <Button variant="hero" size="xl" className="w-full gap-3">
+                    <Phone className="w-5 h-5" />
+                    <span className="sm:hidden">Call My Assistant</span>
+                    <span className="hidden sm:inline">Call My Assistant &nbsp; +1 (361) 309-6198</span>
+                  </Button>
+                </a>
+              </div>
               <a href="https://cal.com/saltpilot/45min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="xl" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md gap-2 transition-all duration-200">
                   Book a Meeting
